@@ -1,0 +1,108 @@
+name,sex,disease_condition,Apo_e4_allele,cerad_score,braak_staging
+H14.09.078,M,No Dementia + No TBI with LOC,ApoE4 allele absent,No Aβ42 deposition,Stage 1 PM-AD neuropath
+H14.09.069,M,No Dementia + TBI with LOC,ApoE4 allele absent,Moderate Aβ42 deposition,Stage 5 PM-AD neuropath
+H14.09.067,M,Dementia + TBI with LOC,ApoE4 allele present,Frequent Aβ42 deposition,Stage 4 PM-AD neuropath
+H15.09.103,F,No Dementia + TBI with LOC,ApoE4 allele absent,No Aβ42 deposition,Stage 4 PM-AD neuropath
+H14.09.010,M,Dementia + No TBI with LOC,ApoE4 allele present,Frequent Aβ42 deposition,Stage 4 PM-AD neuropath
+H14.09.020,F,No Dementia + No TBI with LOC,ApoE4 allele absent,Moderate Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.089,F,Dementia + TBI with LOC,N/A,Frequent Aβ42 deposition,Stage 6 PM-AD neuropath
+H14.09.094,M,No Dementia + No TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 2 PM-AD neuropath
+H14.09.061,F,Dementia + TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 2 PM-AD neuropath
+H14.09.070,M,No Dementia + No TBI with LOC,ApoE4 allele absent,No Aβ42 deposition,Stage 2 PM-AD neuropath
+H14.09.006,F,No Dementia + No TBI with LOC,ApoE4 allele absent,No Aβ42 deposition,Stage 3 PM-AD neuropath
+H15.09.109,F,Dementia + TBI with LOC,ApoE4 allele absent,Moderate Aβ42 deposition,Stage 4 PM-AD neuropath
+H14.09.074,F,No Dementia + No TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.093,M,Dementia + TBI with LOC,ApoE4 allele absent,Frequent Aβ42 deposition,Stage 6 PM-AD neuropath
+H14.09.072,F,No Dementia + No TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 4 PM-AD neuropath
+H14.09.015,M,No Dementia + TBI with LOC,N/A,Sparse Aβ42 deposition,Stage 1 PM-AD neuropath
+H15.09.107,F,Dementia + TBI with LOC,ApoE4 allele present,Frequent Aβ42 deposition,Stage 6 PM-AD neuropath
+H14.09.051,F,No Dementia + TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 2 PM-AD neuropath
+H14.09.038,M,No Dementia + No TBI with LOC,ApoE4 allele absent,No Aβ42 deposition,Stage 2 PM-AD neuropath
+H14.09.008,M,Dementia + No TBI with LOC,ApoE4 allele absent,Frequent Aβ42 deposition,Stage 6 PM-AD neuropath
+H14.09.083,M,No Dementia + TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.077,M,No Dementia + TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 1 PM-AD neuropath
+H14.09.032,F,No Dementia + No TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 4 PM-AD neuropath
+H15.09.110,F,Dementia + No TBI with LOC,ApoE4 allele absent,Moderate Aβ42 deposition,Stage 2 PM-AD neuropath
+H14.09.004,M,No Dementia + No TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.055,F,Dementia + TBI with LOC,ApoE4 allele absent,Moderate Aβ42 deposition,Stage 6 PM-AD neuropath
+H14.09.003,M,No Dementia + TBI with LOC,ApoE4 allele absent,Moderate Aβ42 deposition,Stage 1 PM-AD neuropath
+H14.09.007,M,Dementia + TBI with LOC,ApoE4 allele absent,Frequent Aβ42 deposition,Stage 5 PM-AD neuropath
+H14.09.024,M,No Dementia + No TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.042,F,Dementia + No TBI with LOC,N/A,Frequent Aβ42 deposition,Stage 5 PM-AD neuropath
+H14.09.047,F,Dementia + TBI with LOC,ApoE4 allele absent,No Aβ42 deposition,Stage 4 PM-AD neuropath
+H14.09.095,M,No Dementia + TBI with LOC,ApoE4 allele absent,Moderate Aβ42 deposition,Stage 1 PM-AD neuropath
+H14.09.054,M,Dementia + No TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.071,F,Dementia + TBI with LOC,ApoE4 allele absent,Moderate Aβ42 deposition,Stage 6 PM-AD neuropath
+H14.09.060,F,No Dementia + No TBI with LOC,N/A,Moderate Aβ42 deposition,Stage 4 PM-AD neuropath
+H14.09.082,M,Dementia + No TBI with LOC,ApoE4 allele absent,No Aβ42 deposition,Stage 4 PM-AD neuropath
+H14.09.058,M,No Dementia + No TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 1 PM-AD neuropath
+H14.09.028,M,No Dementia + No TBI with LOC,ApoE4 allele absent,Moderate Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.098,M,Dementia + No TBI with LOC,ApoE4 allele absent,Frequent Aβ42 deposition,Stage 6 PM-AD neuropath
+H14.09.001,M,No Dementia + TBI with LOC,ApoE4 allele absent,No Aβ42 deposition,Stage 6 PM-AD neuropath
+H14.09.062,F,No Dementia + No TBI with LOC,ApoE4 allele present,Sparse Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.044,F,Dementia + No TBI with LOC,N/A,Moderate Aβ42 deposition,Stage 6 PM-AD neuropath
+H14.09.066,M,Dementia + No TBI with LOC,ApoE4 allele absent,No Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.030,F,No Dementia + No TBI with LOC,ApoE4 allele present,Frequent Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.088,F,Dementia + No TBI with LOC,ApoE4 allele absent,Frequent Aβ42 deposition,Stage 5 PM-AD neuropath
+H14.09.002,M,Dementia + No TBI with LOC,ApoE4 allele present,No Aβ42 deposition,Stage 1 PM-AD neuropath
+H14.09.057,M,No Dementia + TBI with LOC,ApoE4 allele present,No Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.101,F,No Dementia + TBI with LOC,ApoE4 allele absent,Frequent Aβ42 deposition,Stage 5 PM-AD neuropath
+H14.09.099,M,Dementia + TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.022,M,Dementia + No TBI with LOC,ApoE4 allele absent,No Aβ42 deposition,Stage 1 PM-AD neuropath
+H15.09.108,F,No Dementia + No TBI with LOC,ApoE4 allele absent,Frequent Aβ42 deposition,Stage 4 PM-AD neuropath
+H14.09.065,M,No Dementia + TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 1 PM-AD neuropath
+H14.09.009,M,Dementia + TBI with LOC,ApoE4 allele absent,Frequent Aβ42 deposition,Stage 5 PM-AD neuropath
+H14.09.086,F,Dementia + No TBI with LOC,ApoE4 allele absent,Frequent Aβ42 deposition,Stage 6 PM-AD neuropath
+H14.09.087,F,Dementia + TBI with LOC,N/A,Moderate Aβ42 deposition,Stage 5 PM-AD neuropath
+H14.09.013,M,Dementia + TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.096,M,No Dementia + No TBI with LOC,ApoE4 allele absent,Moderate Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.079,M,No Dementia + TBI with LOC,ApoE4 allele absent,Frequent Aβ42 deposition,Stage 6 PM-AD neuropath
+H14.09.073,F,Dementia + TBI with LOC,ApoE4 allele present,Sparse Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.011,F,No Dementia + TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 4 PM-AD neuropath
+H14.09.052,F,No Dementia + No TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 2 PM-AD neuropath
+H14.09.012,F,Dementia + No TBI with LOC,ApoE4 allele present,No Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.023,M,No Dementia + TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 2 PM-AD neuropath
+H14.09.034,M,Dementia + No TBI with LOC,ApoE4 allele present,Frequent Aβ42 deposition,Stage 5 PM-AD neuropath
+H14.09.037,M,No Dementia + TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 2 PM-AD neuropath
+H14.09.084,M,No Dementia + No TBI with LOC,ApoE4 allele absent,No Aβ42 deposition,Stage 1 PM-AD neuropath
+H14.09.019,F,No Dementia + TBI with LOC,ApoE4 allele absent,Frequent Aβ42 deposition,Stage 6 PM-AD neuropath
+H14.09.045,M,No Dementia + TBI with LOC,ApoE4 allele present,Moderate Aβ42 deposition,Stage 5 PM-AD neuropath
+H14.09.059,F,Dementia + TBI with LOC,ApoE4 allele absent,No Aβ42 deposition,Stage 4 PM-AD neuropath
+H14.09.026,M,Dementia + No TBI with LOC,ApoE4 allele absent,Moderate Aβ42 deposition,Stage 4 PM-AD neuropath
+H14.09.102,F,No Dementia + No TBI with LOC,ApoE4 allele absent,No Aβ42 deposition,Stage 1 PM-AD neuropath
+H14.09.018,M,Dementia + No TBI with LOC,ApoE4 allele absent,No Aβ42 deposition,Stage 2 PM-AD neuropath
+H14.09.063,M,Dementia + TBI with LOC,ApoE4 allele absent,Moderate Aβ42 deposition,Stage 5 PM-AD neuropath
+H14.09.029,F,Dementia + TBI with LOC,ApoE4 allele absent,Frequent Aβ42 deposition,Stage 4 PM-AD neuropath
+H14.09.039,M,No Dementia + TBI with LOC,ApoE4 allele present,Sparse Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.014,M,No Dementia + No TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 4 PM-AD neuropath
+H14.09.053,M,No Dementia + TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.050,M,No Dementia + No TBI with LOC,ApoE4 allele absent,Frequent Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.090,F,No Dementia + No TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 5 PM-AD neuropath
+H14.09.043,F,Dementia + TBI with LOC,ApoE4 allele absent,No Aβ42 deposition,NA
+H14.09.048,F,Dementia + No TBI with LOC,ApoE4 allele present,No Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.046,M,No Dementia + No TBI with LOC,ApoE4 allele absent,Moderate Aβ42 deposition,Stage 1 PM-AD neuropath
+H14.09.092,M,Dementia + No TBI with LOC,ApoE4 allele present,Frequent Aβ42 deposition,Stage 6 PM-AD neuropath
+H14.09.100,M,Dementia + No TBI with LOC,ApoE4 allele absent,Moderate Aβ42 deposition,Stage 3 PM-AD neuropath
+H15.09.104,F,No Dementia + No TBI with LOC,ApoE4 allele absent,Moderate Aβ42 deposition,Stage 5 PM-AD neuropath
+H14.09.041,F,No Dementia + TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 4 PM-AD neuropath
+H14.09.080,M,No Dementia + No TBI with LOC,ApoE4 allele absent,No Aβ42 deposition,NA
+H14.09.085,F,No Dementia + TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 1 PM-AD neuropath
+H14.09.056,F,Dementia + No TBI with LOC,N/A,Frequent Aβ42 deposition,Stage 5 PM-AD neuropath
+H14.09.033,M,Dementia + TBI with LOC,ApoE4 allele present,Moderate Aβ42 deposition,Stage 6 PM-AD neuropath
+H14.09.031,F,Dementia + TBI with LOC,ApoE4 allele absent,Moderate Aβ42 deposition,Stage 4 PM-AD neuropath
+H14.09.068,M,Dementia + No TBI with LOC,ApoE4 allele present,Frequent Aβ42 deposition,Stage 5 PM-AD neuropath
+H14.09.040,M,Dementia + No TBI with LOC,ApoE4 allele present,Sparse Aβ42 deposition,Stage 6 PM-AD neuropath
+H14.09.081,M,No Dementia + TBI with LOC,ApoE4 allele present,Moderate Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.091,M,Dementia + TBI with LOC,ApoE4 allele absent,Frequent Aβ42 deposition,Stage 6 PM-AD neuropath
+H15.09.106,M,No Dementia + No TBI with LOC,ApoE4 allele absent,No Aβ42 deposition,Stage 2 PM-AD neuropath
+H14.09.097,M,No Dementia + TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.076,F,No Dementia + No TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 2 PM-AD neuropath
+H14.09.075,F,Dementia + TBI with LOC,ApoE4 allele absent,Frequent Aβ42 deposition,Stage 6 PM-AD neuropath
+H14.09.027,M,No Dementia + TBI with LOC,ApoE4 allele absent,No Aβ42 deposition,NA
+H14.09.064,M,Dementia + No TBI with LOC,ApoE4 allele absent,Moderate Aβ42 deposition,Stage 2 PM-AD neuropath
+H14.09.016,M,No Dementia + No TBI with LOC,ApoE4 allele present,Moderate Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.021,M,Dementia + TBI with LOC,ApoE4 allele absent,No Aβ42 deposition,Stage 1 PM-AD neuropath
+H14.09.025,M,Dementia + TBI with LOC,ApoE4 allele absent,No Aβ42 deposition,NA
+H14.09.017,M,No Dementia + TBI with LOC,ApoE4 allele absent,Moderate Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.049,M,No Dementia + TBI with LOC,ApoE4 allele absent,Sparse Aβ42 deposition,Stage 3 PM-AD neuropath
+H14.09.005,F,Dementia + TBI with LOC,ApoE4 allele present,Sparse Aβ42 deposition,Stage 5 PM-AD neuropath

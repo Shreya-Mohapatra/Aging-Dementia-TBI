@@ -1,0 +1,45 @@
+---
+title: "PSY6422 final self-assessment"
+author: "Shreya Mohapatra"
+date: "22/04/2022"
+output:
+  pdf_document:
+    df_print: paged
+colorlinks: true
+boxlinks: true
+urlcolor: blue
+---
+
+# Final Self-assessment for PSY6422
+
+## 1. What aspects of the course (topics, learning methods) did you enjoy? What about the course helped your learning and are things we should do more of, or could be copied by other courses?
+
+R itself. I had never done any coding before and considered myself entirely incapabale of doing it. I not only wrote code but also understood other people's code. Felt intelligent.
+The course page on GitHub, plenty of examples, the regular exercises that were set, live coding, and Luke's incredible assistance + discussions.
+The structured approach. Makes things much easier to navigate and keep track of.
+Also have enjoyed creating my own webpages. Very basic atm but very satisfying none-the-less.
+
+This course basically has made me more keen to play with data + wonder "can I write a code for this"
+
+## 2. Which aspects of the course did you find least useful, least interesting or most difficult? Explain what hindered your learning and, if possible, name a specific thing which we could do to help.
+
+Perhaps the amount of time it takes. I'm not a coding student, so I have 'other things to do' + a simple code or error can take very long to work out, especially when often I don't even know the right terminology for things.
+Also, felt like I was pushed into the deep end of the pool right of the start. Maybe a couple weeks on "intro", "basics" especially on terminology, syntax would go a loooong way.
+Although we "made up" for it + I understand the reasons for it, I wish we hadn't lost classes to strike action
+
+## 3. What topics do you want to learn more about in the future? Explain why
+
+different packages. The fun thing about visualization is to be able to present data. The different packages allow you to play around a lot.
+Even if we stick to 1-3 basic/popular packages, just working with different types of data would be interesting, especially if it can be neuroscience based!
+
+## 4. Please share one thing you have read and enjoyed or found useful on the topic of data management and/or visualisation. Please include a full reference.
+
+Honestly, this: [PSY6422 GitHub](https://tomstafford.github.io/psy6422/rmarkdown.html)
+
+Similar: https://argoshare.is.ed.ac.uk/healthyr_book/plot-the-data.html
+
+And the follow along exercises in the [Kieran Healy book](https://socviz.co/)
+
+## 5. what advice would you give someone starting this course?
+
+More fun than you realize. More time-taking than you'd estimate. More rewarding than you's expect. Only slightly addictive. 8/10
