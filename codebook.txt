@@ -1,0 +1,75 @@
+PSY6422: Data Analysis and Visualization, CNHN, TUOS (2022-23)
+Module Project titled "Race Against Time"
+
+-----------------------------------------------------------------------
+
+The files in this project are:
+
+1. > data
+
+main data file
+  Retrieved from: https://aging.brain-map.org/download/index
+  Link text: "De-identified clinical information (including Alzheimer’s disease, dementia, and TBI diagnoses) for all donors included in the study."
+  File downloaded as: query.csv
+
+other files in data folder:
+  i. query(2).csv: details on the variables the study used, method of collection, additional info
+  ii. tidy_data.csv: Locally saved copy of tidied data
+  iii. TBI_Overview.pdf
+  iv. TBI_Quantitaive_data_generation.pdf
+  v. TBI_Tissue_Collection.pdf
+  vi. TBI_Tissue_Processing.pdf
+
+2. > fig
+  i. Figure 1: Presence of ApoE4 allele in dementia, generated from Aging, Dementia, and TBI study data, on RStudio
+  ii. Figure 2: Beta amyploid placque deposition in dementia and TBI (with loss of consciousness), generated from Aging, Dementia, and TBI study data, on RStudio
+  iii. Figure 3: Post mortem analysis of AD neuropathology pervasiveness in dementia, generated from Aging, Dementia, and TBI study data, on RStudio
+  iv. Figure 4: Dementia, TBI, and various markers (three figures compiled together), generated from Aging, Dementia, and TBI study data, on RStudio
+
+3. > images
+	i. Image 1: Dementia Fact Sheet September 2022 WHO: Global prevelance of dementia & projected estimates, retrieved from: dementiastatistics.org
+  ii. Image 2: World Alzheimer’s Report 2015, The Global Impact of Dementia: An analysis of prevalence, incidence, cost and trends. Alzheimer’s Disease International, retrieved from: dementiastatistics.org
+  iii. Image 3: WHO Global Status Report 2021 (cost of dementia), retrieved from: alzint.org
+
+4. Aging-Dementia-TBI.Rproj
+The R project file
+
+5. Mohapatra220225395.Rmd
+Self-assessment of this module
+
+6. index.Rmd
+The RMarkdown created for this project for knitting to html
+
+7. index.html
+The html file generated for this project, webpage is generated from this file
+
+8. markdown220225395.Rmd
+The RMarkdown created for this project to be knitted to pdf with the required changes (e.g., interactive visualisation code deactivated)
+
+-----------------------------------------------------------------------
+
+The variables used from query.csv
+
+i. apo_e4_allele: cholesterol carrier gene allele apolipoprotein E4 (ApoE4); one of the biggest risk factors for late onset AD.
+ii. cerad: degree of amyloid deposition; scored from 0 (none) to 3 (frequent/severe), as defined by the Consortium to Establish a Registry for Alzheimer’s Disease
+iii. braak: the postmortem scoring of progressive AD neuropathology (neurofibrillary tangles (NFTs)) in different brain regions; Stages I and II indicate “neurofibrillary tangle presence confined primarily to the transentorhinal region of the brain”, stages III and IV indicate “limbic region involvement i.e. the hippocampus”, and stages V and VI indicate “extensive neocortical involvement”.
+iv. act_demented: Any dementia noted during subject's tenure in the ACT study; Noted as Y/N.
+v. ever_tbi_w_loc: Identification of TBI vs. control cases; Noted as Y/N.
+
+act_demented & ever_tbi_w_loc were combined to form the variable disease_condition: No Dementia + No TBI, Dementia w/t TBI, TBI w/t Dementia, Dementia & TBI.
+
+-----------------------------------------------------------------------
+
+RStudio 2023.03.1+446 "Cherry Blossom" Release (6e31ffc3ef2a1f81d377eeccab71ddc11cfbd29e, 2023-05-09) for windows
+
+Packages used on RStudio for this project:
+  i. tidyverse 2.0.0
+  ii. here 1.0.1
+  iii. plotly 4.10.1
+  iv. dplyr 1.1.0
+  v. viridis 0.6.2
+  vi. htmlwidgets 1.6.2
+ 
+ Additionally, knitr 1.42.5 was used to knit the R markdown file into HTML, PDF, Word.
+  
+-----------------------------------------------------------------------
