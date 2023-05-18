@@ -1,91 +1,116 @@
 ---
 title: "Race Against Time"
-date: "`r Sys.Date()`"
+subtitle: "Project for PSY6422, CNHN, TUOS using data from Aging, Dementia, and TBI Study of Allen Brain Map project."
+date: "Created on: 2023-05-09; Updated on: `r Sys.Date()`"
 output:
-  pdf_document:
-    toc: yes
   html_document:
     toc: yes
     toc_float: yes
+    toc_depth: 3
     df_print: paged
     code_folding: show
+    theme: paper
+    highlight: pygments
+  word_document:
+    toc: yes
+always_allow_html: true
 ---
 ***Make the most of it*** 
 
-Before we begin, you can click on `code` in top-right corner of the page to hide all code & simply have a read through and look the the graphs. Or dive right in. You can also hide/show individual code chunks.
+Before we begin, you can click on `code` in the top-right corner of the page to hide all code and simply have a read through and look at the graphs. Or dive right in. You can also hide/show individual code chunks.
 You can click on 'compare data on hover' at the top-right of the graphs.
 You can hover over the graph to find the exact count.
 
-## AGING vs DEMENTIA
+## I. AGING vs DEMENTIA
 
-**Aging** is time-dependent process wherein the longer you live, the more your cells are degenerating, denaturing. *'Healthy aging'* is a result of this natural, inevitable deterioration; it can look different for different people. *'Clinical aging'*, however, is an accelerated degeneration of the physiological system, and often a debilitating dysfunction of the cognition.
+**Aging** is a time-dependent process wherein the longer you live, the more your cells are degenerating, denaturing. *'Healthy aging'* is a result of this natural, inevitable deterioration; it can look different for different people. *'Clinical aging'*, however, is an accelerated degeneration of the physiological system, and often a debilitating dysfunction of the cognition.
 
-People often use aging, dementia, and Alzheimer's interchangeably. However, as mentioned above, aging can be 'healthy' or 'clinical'. **Dementia** is usually what happens when clinical aging takes place, including not exclusively memory impairment, behavioural changes, changes in motivation & emotional experience. *Alzheimer's Disease*, on the other hand, is a very specific type of dementia.
+People often use aging, dementia, and Alzheimer's interchangeably. However, as mentioned above, aging can be 'healthy' or 'clinical'. **Dementia** is usually what happens when clinical aging takes place, including not exclusively memory impairment, behavioural changes, changes in motivation and emotional experience. *Alzheimer's Disease*, on the other hand, is a very specific type of dementia.
 
-There is increasing body of research effort in the field of dementia, Alzheimer's, and other neuro-degenerative diseases; understandably so. <span style = "color: red: ">Global prevalence is estimated at 55M people affected (2020), and this number is expected to more than double in the next thirty years.</span>
+There is increasing body of research effort in the field of dementia, Alzheimer's, and other neuro-degenerative diseases; understandably so. <span style="color: red; ">Global prevalence is estimated at 55M people affected (2020), and this number is expected to more than double in the next thirty years.</span>
 
 ![Source: Dementia fact sheet September 2022; World Health Organisation, retrieved from dementiastatistics.org](https://www.dementiastatistics.org/wp-content/uploads/2016/10/statistic-widget-429.png)
 
-Of course, uber-fast changing life styles and global environment are a factor, so is the increase in the average life span & global population when it comes to correctly interpreting such numbers. Nevertheless, it is nothing short of an endemic.
+Of course, uber-fast changing life styles and global environment are a factor, so is the increase in the average life span and global population when it comes to correctly interpreting such numbers. Nevertheless, it is nothing short of an endemic.
 
 ![Source: Prince, M et al (2015). World Alzheimer’s Report 2015, The Global Impact of Dementia: An analysis of prevalence, incidence, cost and trends. Alzheimer’s Disease International, retrieved from dementiastatistics.org ](https://www.dementiastatistics.org/wp-content/uploads/2016/10/statistic-widget-402.png)
 
-Dementia has psychological & physical repercussions on not only the person who experiences it but also their closest loved ones. In addition to that, chronic illnesses like this put an immense strain on the healthcare systems (that are already struggling) and the economy.
+Dementia has psychological and physical repercussions on not only the person who experiences it but also their closest loved ones. In addition to that, chronic illnesses like this put an immense strain on the healthcare systems (that are already struggling) and the economy.
 
 ![WHO Global Status Report 2021, retrieved from alzint.org](https://www.alzint.org/u/Total-estimated-annual-worldwide-cost-of-dementia_Final-512x512.jpg)
 
-#### Work is under-way
+### I.I Work is under-way
 
 Clinical, research, and translational work, as well as AI integration are currently aimed at two goals:
 
 - better management
-- early detection & prevention
+- early detection and prevention
 
 Both the goals rely on extensive data to
 
-* understand disease symptomology & etymology across a varied demographic
-* to identify potential risk factors & prevalent co-morbidities
-* to identify potential targets for multi-pronged,  early therapeutic intervention & accurate prognosis
+* understand disease symptomology and etymology across a varied demographic
+* to identify potential risk factors and prevalent co-morbidities
+* to identify potential targets for multi-pronged,  early therapeutic intervention and accurate prognosis
 
-### Allen Brain Map Databases
+## II. Allen Brain Map Databases
 
-The [Allen Institute](https://alleninstitute.org/) is an independent, NPO focusing on biosciences research. One of their projects is the [Allen Brain Map](https://portal.brain-map.org/) is largely aimed at collecting large datasets & creating atlases based on them. In their own words, their "portal provides access to high quality data and web-based applications created for the benefit of the global research community." These data-sets can be used by scientists, educators, policy makers across the world.
+The [Allen Institute](https://alleninstitute.org/) is an independent, non-profit organisation focusing on biosciences research. One of their projects is the [Allen Brain Map](https://portal.brain-map.org/) is largely aimed at collecting large datasets and creating atlases based on them. In their own words, their "portal provides access to high quality data and web-based applications created for the benefit of the global research community." These data-sets can be used by scientists, educators, and policy makers across the world.
 
 The ABM, unsurprisingly, has a [Aging, Dementia, TBI study](https://aging.brain-map.org/overview/explore). This is where we get our [data](https://aging.brain-map.org/download/index) from today. The link contains data, as well as description of the data and metadata. 
 
-### Now, let's get some LIBRARIES loaded in
+## III. Now, let's get some LIBRARIES loaded in
 
-The cogs of a well-oiled machine. Require regular updates though. *Can* be a pit of a pain.
+The cogs of a well-oiled machine. Require regular updates though. *Can* be a bit of a pain.
+
+| **Libraries Used**| **Purpose**  |
+|:------------------|:-----------|
+| tidyverse_2.0.0 |transforming/wrangling data  |   
+| here_1.0.1 |easy file referencing/build file paths  |
+| plotly_4.10.1 |create interactive graphs  |
+| dplyr_1.1.0   |data manipulation     |
+| viridis_0.6.2 |color-blindness friendly color palette; perceptually uniform in colour and black-and-white|
+| htmlwidgets_1.6.2  |provides a framework for creating R bindings to JavaScript libraries    |
 
 ```{r Libraries, error=FALSE, message=FALSE, warning=FALSE}
 
 # ------------- LIBRARIES -----------------
 
-# if the library is required but not installed, it will be installed first & then loaded
+# if the library is required but not installed, it will be installed first and then loaded
 
-if(!require(tidyverse)){install.packages("tidyverse"); library(tidyverse)}
-if(!require(here)){install.packages("here"); library(here)}
-if(!require(plotly)){install.packages("plotly"); library(plotly)}
-if(!require(dplyr)){install.packages("dplyr"); library(dplyr)}
-if(!require(viridis)){install.packages("viridis"); library(viridis)}
+using <- function(...){ # assigning custom function to a vector; the (...) allows it to accept any number of arguments
+  libs <- unlist(list(...)) # list(...) creates a list of the arguments passed to the using function, and unlist converts it into a single vector; this is stored in libs
+  req <- unlist(lapply(libs, require, character.only=T)) # require checks if package is installed & loaded; lapply applies require to each element of libs
+  need <- libs[req==F] # extracts package names from libs that are FALSE or not loaded or installed
+  if(length(need)>0){ # checks if there are any packages in need
+    install.packages(need) # installs the packages
+    lapply(need, require, character.only=T) #loads packages
+  }
+}
 
-# other libraries that may be useful when saving an interactive plot
-# if(!require(htmlwidgets)){install.packages("htmlwidgets"); library(htmlwidgets)} # needs troubleshooting
-# if(!require(saveWidget)){install.packages("saveWidget"); library(saveWidget)}
+# calling the functional vector; write the packages you are using here
+using("tidyverse", "here", "plotly", "dplyr", "viridis", "htmlwidgets")
+
+# alternate code if you have only one or two packages:
+# if(!require(tidyverse)){install.packages("tidyverse"); library(tidyverse)}
+
+# you can check the version you have by using: packageVersion("viridis") for example.
+
 
 ```
 
-### Take a swim in the DATA sea
+## IV. Take a swim in the DATA sea {.tabset .tabset-fade}
 
 One of the biggest challenges is to get accessible and usable data that is not **too raw** (all those open-access fMRI scans, I'm looking at you), nor beyond your scope of understanding. A humbling experience.
 
 The `csv` file used in this visualization is from the first link [here](https://aging.brain-map.org/download/index).
-Anonymity is key, so, all patients/ participants had donor id and a code name. Then, there is some demographic information such as age, gender, and ethnicity. There are then quite a few clinical parameters listed, of which I was interested in
+Anonymity is key, so, all patients/participants had donor id and a code name. Then, there is some demographic information such as age, gender, and ethnicity. There are then quite a few clinical parameters listed, of which I was interested in
 
 - cholesterol carrier gene allele apolipoprotein E4 (ApoE4). `apo_e4_allele` is the one of the biggest risk factors for late onset AD.
 - amyloid deposition from 0 (none) to 3 (frequent/severe), as defined by the Consortium to Establish a Registry for Alzheimer's Disease `cerad`.
 - the postmortem scoring of progressive AD neuropathology in different brain regions. `braak` stages I and II indicate "neurofibrillary tangle presence confined primarily to the transentorhinal region of the brain", stages III and IV indicate "limbic region involvement i.e. the hippocampus", and stages V and VI indicate "extensive neocortical involvement".
 
+
+### IV.I. Loading data
 ```{r View the df, error=FALSE, message=FALSE, warning=FALSE}
 
 # ------------- LOAD FILE ------------------
@@ -95,15 +120,17 @@ original_df <- read_csv(here("data", "query.csv"))
 
 # take a look at the data
 # good practice, become familiar with data, columns, before beginning
-head(original_df)
+head(original_df, 6)
 
 ```
 
-One of the most crucial steps in data analysis & visualization is **data wrangling**; sometimes you wrangle the data, mostly, it wrangles you. But when it works, it's quite rewarding!
-This is also the step where you want to think about which variables you are interested in, what relationship could they have, and how can you accurately depict it. Pretty much the what & why.
+One of the most crucial steps in data analysis and visualization is **data wrangling**; sometimes you wrangle the data, mostly, it wrangles you. But when it works, it's quite rewarding!
+This is also the step where you want to think about which variables you are interested in, what relationship could they have, and how can you accurately depict it. Pretty much the what and why.
 
 At this stage, I have had to change the data I wanted to use, or the research question I wanted answered, or how I wanted to show it best multiple times because of my data accessibility limitations and, admittedly, my own limited coding experience. But you learn as you go.
 
+
+### IV.II. Creating tidy data
 ```{r Data Wrangling, message=FALSE, warning=FALSE}
 
 # ------------- DATA WRANGLING ------------- 
@@ -128,12 +155,12 @@ renamed_df$tbi_w_loc <- gsub("Y", 2, renamed_df$tbi_w_loc)
 renamed_df$dementia <- as.numeric(renamed_df$dementia) # class is changed to numeric
 renamed_df$tbi_w_loc <- as.numeric(renamed_df$tbi_w_loc)
 
-# create new column 'disease condition' by 'adding' the numeric values on 'dementia' & 'TBI' columns
+# create new column 'disease condition' by 'adding' the numeric values on 'dementia' and 'TBI' columns
 # I am doing this to create 4 groups that I can group the data later to for more meaningful comparison
 wrangled_df <- renamed_df %>%
   mutate(disease_cond = renamed_df$dementia + renamed_df$tbi_w_loc)
 
-# changing numeric back to character for easier plot making & labelling
+# changing numeric back to character for easier plot making and labelling
 wrangled_df$disease_cond <- as.character(wrangled_df$disease_cond)
 wrangled_df$cerad <- as.character(wrangled_df$cerad)
 wrangled_df$braak <- as.character(wrangled_df$braak)
@@ -170,6 +197,8 @@ aging_df <- if_df4 %>%
 
 There is ***probably*** a better way to handle these variables. This is what ***I could do best.***
 
+
+### IV.III. Save tidy data
 ```{r Save Local, message=FALSE, warning=FALSE}
 
 # create local copy of clean df
@@ -179,11 +208,11 @@ write_csv(aging_df, here("data", "tidy_data.csv"))
 
 ```
 
-### On to some VISUALIZATIONS we go
+## V. On to some VISUALIZATIONS we go {.tabset .tabset-pill}
 
 I decided to create three graphs because I felt they presented a better picture together.
 
-#### Genes come first.
+#### V.I. Genes come first.
 
 The apolipoprotein E (ApoE) gene is a gene that provides instructions for making the ApoE protein. The APOE gene comes in several different forms, or alleles, but the three most common ones are APOE2, APOE3, and APOE4.
 
@@ -191,7 +220,25 @@ Studies have found that the ApoE4 allele is associated with an increased risk of
 
 Of course,  not everyone who has the APOE4 allele will develop dementia, and not everyone who develops dementia has the ApoE4 allele, which you will also notice in FIG.1.
 
-```{r Graph 1, fig.cap= 'FIG.1: Presence of ApoE4 allele in dementia', message=FALSE, warning=FALSE}
+#### V.II. House cleaning nightmare
+
+ Aβ42 is a peptide that is produced by the cleavage of a larger protein called amyloid precursor protein (APP). In healthy individuals, Aβ42 is cleared from the brain through various mechanisms, but in Alzheimer's disease, it accumulates in the brain, forming insoluble plaques that are toxic to neurons.
+
+The accumulation of Aβ42 is thought to be an early event in the pathogenesis of Alzheimer's disease, preceding the onset of cognitive symptoms. As Aβ42 plaques accumulate, they can trigger a cascade of events that lead to neuronal damage and changes in brain function, such as decreased connectivity between brain regions, which can lead to cognitive impairment.
+
+Overall, Aβ42 deposition is a key biomarker of Alzheimer's disease and other dementias, and understanding the mechanisms of Aβ42 accumulation and clearance is a major focus of research in the field.
+
+FIG.2 shows the severity of Aβ42 deposition to be higher in the dementia groups. The original data also has information on who of their subjects had AD which could be an interesting variable to add in this visualization.
+
+#### V.III. What's in a dead brain
+
+Braak staging is a system of classifying the extent and progression of Alzheimer's disease neuropathology in post-mortem brains.
+It divides the progression into six stages, based on the distribution and accumulation of two hallmark proteins: beta-amyloid (Aβ) and tau. In the early stages (Braak stages I and II), Aβ deposits are found in the neocortex and limbic system, while tau pathology is limited to the transentorhinal region. As the disease progresses (stages III-IV), Aβ deposits increase and spread to the hippocampus, while tau pathology spreads to the limbic system. In the final stages (V-VI), Aβ deposits are widespread throughout the cortex, and tau pathology is found in the neocortex.
+
+Studies using Braak staging have shown that the distribution of Alzheimer's disease pathology is closely linked to cognitive decline and dementia. For example, individuals with a higher Braak stage at death are more likely to have had dementia during life, and the degree of cognitive impairment correlates with the extent of pathology in specific brain regions. However, it is important to note that other factors, such as vascular disease, Lewy body pathology, and age-related changes, can also contribute to cognitive decline and dementia.
+
+### Presence of ApoE4 allele
+```{r Graph 1, fig.cap= 'FIG.1: Presence of ApoE4 allele in dementia', fig.align='center', message=FALSE, warning=FALSE}
 
 # ------------- GRAPHING ------------- 
 
@@ -202,7 +249,7 @@ subdf1 <- aging_df %>%
   group_by(disease_condition, Apo_e4_allele) %>%
   summarise(count= n(), .groups = "drop")
 
-# what we want the x-axis labels to read & the order of the categories
+# what we want the x-axis labels to read and the order of the categories
 # default is usually ascending alphanumeric, change it if it makes your plot easier to read!
 xform1 <- list(categoryorder = "array",
               categoryarray = c("No Dementia + No TBI with LOC", 
@@ -240,18 +287,8 @@ dplyrplotly1
 ```
 
 
-#### House cleaning nightmare
-
- Aβ42 is a peptide that is produced by the cleavage of a larger protein called amyloid precursor protein (APP). In healthy individuals, Aβ42 is cleared from the brain through various mechanisms, but in Alzheimer's disease, it accumulates in the brain, forming insoluble plaques that are toxic to neurons.
-
-The accumulation of Aβ42 is thought to be an early event in the pathogenesis of Alzheimer's disease, preceding the onset of cognitive symptoms. As Aβ42 plaques accumulate, they can trigger a cascade of events that lead to neuronal damage and changes in brain function, such as decreased connectivity between brain regions, which can lead to cognitive impairment.
-
-Overall, Aβ42 deposition is a key biomarker of Alzheimer's disease and other dementias, and understanding the mechanisms of Aβ42 accumulation and clearance is a major focus of research in the field.
-
-FIG.2 shows the severity of Aβ42 deposition to be higher in the dementia groups. The original data also has information on who of their subjects had AD which could be an interesting variable to add in this visualization.
-
-
-```{r Graph 2, fig.cap= 'FIG.2: Beta amyploid placque deposition in dementia and TBI (with loss of consciousness)', message=FALSE, warning=FALSE}
+### Beta amyploid placque deposition
+```{r Graph 2, fig.cap= 'FIG.2: Beta amyploid placque deposition in dementia and TBI (with loss of consciousness)', fig.align='center', message=FALSE, warning=FALSE}
 
 # second plot: disease condition v CERAD score
 # you know the drill
@@ -287,14 +324,9 @@ dplyrplotly2
 
 ```
 
-#### What's in a dead brain
 
-Braak staging is a system of claasifying the extent and progression of Alzheimer's disease neuropathology in post-mortem brains.
-It divides the progression into six stages, based on the distribution and accumulation of two hallmark proteins: beta-amyloid (Aβ) and tau. In the early stages (Braak stages I and II), Aβ deposits are found in the neocortex and limbic system, while tau pathology is limited to the transentorhinal region. As the disease progresses (stages III-IV), Aβ deposits increase and spread to the hippocampus, while tau pathology spreads to the limbic system. In the final stages (V-VI), Aβ deposits are widespread throughout the cortex, and tau pathology is found in the neocortex.
-
-Studies using Braak staging have shown that the distribution of Alzheimer's disease pathology is closely linked to cognitive decline and dementia. For example, individuals with a higher Braak stage at death are more likely to have had dementia during life, and the degree of cognitive impairment correlates with the extent of pathology in specific brain regions. However, it is important to note that other factors, such as vascular disease, Lewy body pathology, and age-related changes, can also contribute to cognitive decline and dementia.
-
-```{r Graph 3, fig.cap= 'FIG.3: Post mortem analysis of AD neuropathology pervasiveness in dementia', message=FALSE, warning=FALSE}
+### Post mortem neurofibrillary tangles
+```{r Graph 3, fig.cap= 'FIG.3: Post mortem analysis of AD neuropathology pervasiveness in dementia', fig.align='center', message=FALSE, warning=FALSE}
 
 # third plot: disease condition v BRAAK score
 # aaaand, one more time
@@ -332,7 +364,7 @@ dplyrplotly3
 
 ```
 
-#### And then there were three
+## V.IV. And then there were three:  Dementia, TBI, and various markers
 
 United!
 
@@ -347,8 +379,8 @@ final <- subplot(
   dplyrplotly3 %>% layout(showlegend = TRUE),
   shareY = TRUE)%>% # if they share the same variable on an axis, make them share it!
   layout(
-    title = list(text = 'ApoE4 allele presence, Aβ42 deposition frequency, and post-mortem AD neuropathology severity in dementia & TBI',
-                 y = 4), # title text & position
+    title = list(text = 'ApoE4 allele presence, Aβ42 deposition frequency, and post-mortem AD neuropathology severity in dementia and TBI',
+                 y = 4), # title text and position
     margin = list(t = 75)) # more on position
 
 # more ways of adding text to your plot
@@ -405,33 +437,43 @@ finally <- final %>%
 
 Deep breaths.
 
-``` {r Main Graph, fig.cap= 'FIG.4: Dementia, TBI, and various markers)', fig.width= 12, fig.asp= 1.0, message=FALSE, warning=FALSE}
+``` {r Main Graph, fig.cap= 'FIG.4: Dementia, TBI, and various markers', fig.width= 12, fig.asp= 0.8, message=FALSE, warning=FALSE}
 
 # marvel at it
 finally
+```
+
+``` {r Saving the graph, message=FALSE, warning=FALSE, eval=FALSE}
+
+# save it
+htmlwidgets::saveWidget(finally, file.path(fig_dir, 'Aging-Dementia-TBI-interactive.html'))
 
 ```
 
 
+### Brief Discussion
+
 Looking at these variables together shows us an interesting pattern. 
-As expected, those with dementia generally scored higher on the various parameters. While those with no dementia or TBI tended to score the lowest. The mixed groups should interesting results. The presence of certain bio markers, for example, did not necessarily predicted a dementia outcome. On the other hand, those without dementia but having experienced TBI may show those markers because these can have different etiologies.
+As expected, those with dementia generally scored higher on the various parameters. While those with no dementia or TBI tended to score the lowest. The mixed groups showed interesting results. The presence of certain bio markers, for example, did not necessarily predicted a dementia outcome. On the other hand, those without dementia but having experienced TBI may show those markers because these can have different etiologies.
 
 Having a larger data set and running statistical analysis would be helpful in understanding these relationships and developing predictive models.
 
-### CONCLUSION
+## VI. CONCLUSION
 
+<p style="font-family: times, serif; font-size:11pt; font-style:italic">
 As is, dementia remains a complex disease with many contributing factors. One may have all the predisposition for dementia, and still never experience it in their lifetime. On the other hand, co-morbidity such has cardiovascular disease, neuroinflammatory disease, and TBI may increase chances of developing dementia.
+</p>
 
 Well, hope that was fun and educational, maybe even morbid.
 `That's all for now.`
 
-### REFERENCES
+## VII. REFERENCES
 
 - [Acknowledging Dr. Stafford](https://tomstafford.github.io/psy6422/rmarkdown.html)
 - [Acknowledging Luke Cleland](https://github.com/LClel)
 
 
-##### RBasic
+### RBasic
 
 - [RMarkdown styling](https://bookdown.org/yihui/rmarkdown/html-document.html)
 - [RMarkdown basic syntax](https://www.markdownguide.org/basic-syntax/)
@@ -439,24 +481,26 @@ Well, hope that was fun and educational, maybe even morbid.
 - [knitr](https://yihui.org/knitr/options/)
 - [ifelse](https://stackoverflow.com/questions/31150764/how-to-create-a-new-column-of-data-in-r-with-if-statements)
 - [ifthenshowme](https://bookdown.org/ndphillips/YaRrr/using-if-then-statements-in-functions.html)
+- [RMarkdown](https://intro2r.com/r-markdown-anatomy.html)
+- [Table this for now](https://dereksonderegger.github.io/570L/15-rmarkdown-tricks.html)
+- [More on Markdown](https://bookdown.org/yihui/rmarkdown/)
 
-
-##### The plot thickens
+### The plot thickens
 
 - [Stuff of legends](https://plotly.com/r/legend/)
 - [Quit hover-ing over me](https://statisticsglobe.com/format-hover-text-plotly-graph-r)
 - [More hover-ing](https://plotly.com/r/hover-text-and-formatting/#:~:text=To%20customize%20the%20tooltip%20on,d3%2Dtime%2Dfomrat's%20syntax.)
 - [Chart your way out](https://stackoverflow.com/questions/40149556/ordering-in-r-plotly-barchart)
-- [Colour is everyone](https://stackoverflow.com/questions/46771511/r-plotly-set-custom-colors-for-bar-chart)
+- [Colour is for everyone](https://stackoverflow.com/questions/46771511/r-plotly-set-custom-colors-for-bar-chart)
 - [Never enough legends](https://stat.ethz.ch/R-manual/R-devel/library/graphics/html/legend.html)
 - [More legends](https://community.plotly.com/t/plotly-subplots-with-individual-legends/1754/11?page=2)
 - [The subplot thickens](https://plotly.com/r/subplots/)
 
-##### On topic
+### On topic
 
 - [WHO on dementia](https://www.who.int/news-room/fact-sheets/detail/dementia)
 - [Alzheimer's Research UK's Dementia Statistic Hub](https://dementiastatistics.org/)
 - [Stunning visualization from Allen Institute](https://aging.brain-map.org/overview/tour?tour=neuropathology)
 - [Boluda, S., Toledo, J. B., Irwin, D. J., Raible, K. M., Byrne, M. D., Lee, E. B., Lee, V. M., & Trojanowski, J. Q. (2014). A comparison of Aβ amyloid pathology staging systems and correlation with clinical diagnosis. Acta neuropathologica, 128(4), 543–550.](https://doi.org/10.1007/s00401-014-1308-9)
-- [(Mufson, E. J., Malek-Ahmadi, M., Perez, S. E., & Chen, K. (2016). Braak staging, plaque pathology, and APOE status in elderly persons without cognitive impairment. Neurobiology of aging, 37, 147–153.](https://doi.org/10.1016/j.neurobiolaging.2015.10.012)
+- [Mufson, E. J., Malek-Ahmadi, M., Perez, S. E., & Chen, K. (2016). Braak staging, plaque pathology, and APOE status in elderly persons without cognitive impairment. Neurobiology of aging, 37, 147–153.](https://doi.org/10.1016/j.neurobiolaging.2015.10.012)
 - [Li, X., Feng, X., Sun, X., Hou, N., Han, F., & Liu, Y. (2022). Global, regional, and national burden of Alzheimer's disease and other dementias, 1990–2019. Frontiers in Aging Neuroscience, 14.](https://doi.org/10.3389/fnagi.2022.937486)
