@@ -3,6 +3,8 @@ title: "Race Against Time"
 subtitle: "Project for PSY6422, CNHN, TUOS using data from Aging, Dementia, and TBI Study of Allen Brain Map project."
 date: "Created on: 2023-05-09; Updated on: `r Sys.Date()`"
 output:
+  word_document:
+    toc: yes
   html_document:
     toc: yes
     toc_float: yes
@@ -11,8 +13,6 @@ output:
     code_folding: show
     theme: paper
     highlight: pygments
-  word_document:
-    toc: yes
 always_allow_html: true
 ---
 ***Make the most of it*** 
