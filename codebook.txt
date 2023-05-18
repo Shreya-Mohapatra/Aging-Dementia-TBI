@@ -21,13 +21,13 @@ other files in data folder:
   vi. TBI_Tissue_Processing.pdf
 
 2. > fig
-  i. Figure 1: Presence of ApoE4 allele in dementia, generated from Aging, Dementia, and TBI study data, on RStudio
-  ii. Figure 2: Beta amyploid placque deposition in dementia and TBI (with loss of consciousness), generated from Aging, Dementia, and TBI study data, on RStudio
-  iii. Figure 3: Post mortem analysis of AD neuropathology pervasiveness in dementia, generated from Aging, Dementia, and TBI study data, on RStudio
-  iv. Figure 4: Dementia, TBI, and various markers (three figures compiled together), generated from Aging, Dementia, and TBI study data, on RStudio
+  i. FIG1: Presence of ApoE4 allele in dementia, generated from Aging, Dementia, and TBI study data, on RStudio (non-interactive)
+  ii. FIG2: Beta amyploid placque deposition in dementia and TBI (with loss of consciousness), generated from Aging, Dementia, and TBI study data, on RStudio (non-interactive)
+  iii. FIG3: Post mortem analysis of AD neuropathology pervasiveness in dementia, generated from Aging, Dementia, and TBI study data, on RStudio (non-interactive)
+  iv.viz220225395: Dementia, TBI, and various markers (three figures compiled together), generated from Aging, Dementia, and TBI study data, on RStudio (screenshot)
 
 3. > images
-	i. Image 1: Dementia Fact Sheet September 2022 WHO: Global prevelance of dementia & projected estimates, retrieved from: dementiastatistics.org
+  i. Image 1: Dementia Fact Sheet September 2022 WHO: Global prevelance of dementia & projected estimates, retrieved from: dementiastatistics.org
   ii. Image 2: World Alzheimer’s Report 2015, The Global Impact of Dementia: An analysis of prevalence, incidence, cost and trends. Alzheimer’s Disease International, retrieved from: dementiastatistics.org
   iii. Image 3: WHO Global Status Report 2021 (cost of dementia), retrieved from: alzint.org
 
